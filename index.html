@@ -5,7 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteStack Dashboard</title>
+    <link rel="icon" href="images/aws.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animation for marquee */
+        .marquee {
+            animation: marquee 15s linear infinite;
+            white-space: nowrap;
+            font-weight: 800;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(-100%, 0);
+            }
+
+            100% {
+                transform: translate(100%,0);
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -14,15 +35,24 @@
         <div class="container mx-auto flex ">
             <div class="text-2xl font-semibold">NoteStack</div>
             <div>
-                <ul class="flex text-xl ml-10  ">
+                <ul class="flex text-xl ml-10">
                     <li><a href="cc_m1.html" class="hover:text-gray-400">Cloud Computing</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Stylish marquee -->
+    <div class="bg-gray-700 py-3">
+        <div class="container mx-auto">
+            <div class="marquee text-xl text-center  text-yellow-400">
+                Cloud Computing Module 1 Notes Uploaded!
+            </div>
+        </div>
+    </div>
+
     <div class="container mx-auto mt-14 text-center">
-        <h1 class="text-5xl font-bold  mb-10">Welcome to NoteStack</h1>
+        <h1 class="text-5xl font-bold mb-10">Welcome to NoteStack</h1>
     </div>
 
     <div class="container mx-auto p-6">
@@ -33,7 +63,6 @@
                 <div class="bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
                     <h3 class="text-xl font-bold"><a href="cc_m1.html">Cloud Computing </a></h3>
                     <p class="mt-2">Module 1</p>
-
                 </div>
                 <div class="bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
                     <h3 class="text-xl font-bold">Cloud Computing </h3>
